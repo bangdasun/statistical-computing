@@ -1,0 +1,152 @@
+---
+title: "Hwk2_bs2996"
+author: "Bangda Sun"
+date: "September 27, 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Part 1: Loading and cleaning data in **R**
+
+#### i. Load the data into a dataframe called **housing**
+
+```{r}
+housing <- read.csv("C:\\Users\\Bangda\\Desktop\\GR5206 Materials\\NYChousing.csv", header = T)
+```
+
+
+#### ii. How many rows and columns does the dataframe have?
+
+```{r}
+rows <-nrow(housing); rows
+columns <- ncol(housing); columns
+```
+
+#### iii. Run this command, and explain, in words, what this does:
+
+```{r}
+apply(is.na(housing), 2, sum)
+```
+
+It counts the number of `NA` in each column (variable). For instance, there are 15 `NA` in variable **Lon** and **Lat**.
+
+#### iv. Remove the rows of the dataset for which the variable **Value** is `NA`.
+
+```{r}
+housing2 <- housing[!is.na(housing$Value),] # housing2 is the dataframe without the NA value in Value
+```
+
+#### v. How many rows did you remove with the previous call? Does this agree with your result from (iii)?
+
+```{r}
+na.rows <- nrow(housing) - nrow(housing2); na.rows # number of rows being removed
+```
+
+In (iii), we count the number of `NA` in each column, it showed that there are 52 `NA` in **Value**, and in (iv) we removed the rows which have `NA` in **Value**, and the result is same, they are both 52.
+
+#### vi. Create a new variable in the dataset called **logValue** that is equal to the logarithm of the property's **Value**. What are the minimum, median, mean, and maximum values of **logValue**?
+
+```{r}
+housing2$logValue <- log(housing2$Value) 
+summary.logValue <- rep(0,4)
+names(summary.logValue) <- c("Min", "Median", "Mean", "Max")
+summary.logValue[1] <- min(housing2$logValue)    # min
+summary.logValue[2] <- median(housing2$logValue) # median
+summary.logValue[3] <- mean(housing2$logValue)   # mean
+summary.logValue[4] <- max(housing2$logValue)    # max
+summary.logValue
+```
+
+#### vii. Create a new variable in the dataset called **logUnits** that is equal to the logarithm of the number of units in the property. The number of units in each piece of property is stored in the variable **UnitCount**.
+
+```{r}
+housing2$logUnits <- log(housing2$UnitCount)
+```
+
+#### viii. Finally create a new variable in the dataset called **after1950** which equals `TRUE` if the property was built in or after 1950 and `FALSE` otherwise. You'll want to use the **YearBuilt** variable here. This can be done in a single line of code.
+
+```{r}
+housing2$after1950 <- (housing2$YearBuilt >= 1950)
+```
+
+## Part 2: EDA
+
+#### i. Plot property logValue against property **logUnits**. Name the x and y labels of the plot appropriately. **logValue** should be on the y-axis.
+
+```{r}
+plot(housing2$logUnits, housing2$logValue,'p', xlab = 'logUnits', ylab = 'logValue')
+```
+
+
+#### ii. Make the same plot as above, but now include the argument `col = factor(housing$after1950)`. Describe this plot and the covariation between the two variables. What does the coloring in the plot tell us?
+
+```{r}
+housing2$after1950 <- factor(housing2$after1950)
+plot(housing2$logUnits, housing2$logValue, xlab = 'logUnits', ylab = 'logValue', col = housing2$after1950)
+legend("bottomright", legend = levels(housing2$after1950), fill
+= unique(housing2$after1950))
+```
+
+This plot shows the covariation between **logUnits** and **logValue**. We can see **logValue** increase as **logUnits** increase in general, or say they have positive correlation. If the concentration of data points is higher, the covariation is higher. The red color denotes the house was built in or after 1950, and the black color denotes the house was built before 1950, and the figure shows that the covariation of black color points is higher.
+
+#### iii. The `cor()` function calculates the correlation coefficient between two variables. What is the correlation between property **logValue** and property **logUnits** in (i) the whole data, (ii) just Manhattan (iii) just Brooklyn (iv) for properties built after 1950 (v) for properties built before 1950?
+
+```{r}
+cor(housing2$logValue, housing2$logUnits) # whole data
+cor(housing2$logValue[which(housing2$Borough == 'Manhattan')], housing2$logUnits[which(housing2$Borough == 'Manhattan')]) # Manhattan
+cor(housing2$logValue[which(housing2$Borough == 'Brooklyn')], housing2$logUnits[which(housing2$Borough == 'Brooklyn')]) # Brooklyn
+cor(housing2$logValue[which(housing2$after1950 == T)], housing2$logUnits[which(housing2$after1950 == T)]) # after 1950
+cor(housing2$logValue[which(housing2$after1950 == F)], housing2$logUnits[which(housing2$after1950 == F)]) # before 1950
+
+```
+
+#### iv. Make two plots showing property **logValue** against property **logUnits** for Manhattan and Brooklyn. (If you can fit the information into one plot, clearly distinguishing the two boroughs, that's OK too.)
+
+```{r}
+par(mfrow = c(1,2))
+plot(housing2$logUnits[which(housing2$Borough == 'Manhattan')], housing2$logValue[which(housing2$Borough == 'Manhattan')], ylab = 'logValue', xlab = 'logUnits', main = "Manhattan", ylim = c(7,21), xlim = c(0,9))
+plot(housing2$logUnits[which(housing2$Borough == 'Brooklyn')], housing2$logValue[which(housing2$Borough == 'Brooklyn')], ylab = 'logValue', xlab = 'logUnits', main = "Brooklyn",ylim = c(7,21), xlim = c(0,9))
+```
+
+
+#### v. Consider the following block of code. Give a single line of R code which gives the same final answer as the block of code. There are a few ways to do this.
+
+```{r}
+manhat.props <- c()
+for (props in 1:nrow(housing2)) {
+  if (housing2$Borough[props] == "Manhattan") {
+      manhat.props <- c(manhat.props, props)
+  }
+}
+med.value <- c()
+for (props in manhat.props) {
+  med.value <- c(med.value, housing2$Value[props])
+}
+med.value <- median(med.value, na.rm = TRUE)
+```
+
+The goal of the codes above is to find the median value of house in Manhattan, where **manhat.props** is the row index of "Manhattan" and **med.value** is the housing value of "Manhattan".
+
+```{r}
+med.value2 <- median(housing2$Value[which(housing2$Borough == 'Manhattan')]); med.value2
+med.value == med.value2 # check if they are equal
+```
+
+
+#### vi. Make side-by-side box plots comparing property **logValue** across the five boroughs.
+```{r}
+boxplot(housing2$logValue ~ housing2$Borough)
+```
+
+#### vii. For five boroughs, what are the median property values? (Use **Value** here, not **logValue**.)
+```{r, fig.keep = 'none'}
+median <- boxplot(housing2$logValue ~ housing2$Borough)$stat[3,]
+names(median) <- c("Bronx", "Brooklyn", "Manhattan", "Queens", "Staten Island")
+median <- exp(median); median # median value for five boroughs
+```
+
+
+
