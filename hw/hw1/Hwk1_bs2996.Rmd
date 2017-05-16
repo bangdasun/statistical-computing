@@ -1,0 +1,141 @@
+---
+title: "Hwk1_bs2996"
+author: "Bangda Sun"
+date: "September 22, 2016"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Part 1: Importing Data into R
+
+Question (i) 
+
+Import the titanic dataset into RStudio using `read.table()`. Use the argument `as.is
+= TRUE`. The dataset should be stored in a data frame called **titanic**.
+
+```{r}
+data <- read.table("C:\\Users\\Bangda\\Desktop\\GR5206 Materials\\Titanic.txt",
+                   header = T, sep = "", as.is = T)
+titanic <- data.frame(data)
+is.data.frame(titanic) # Check if titanic is a data.frame
+```
+
+Question (ii)
+
+How many rows and columns does **titanic** have? (If there are not 891 rows and 12
+columns something is wrong. Check part (i) to see what could have gone wrong.)
+
+```{r}
+rows <- dim(titanic)[1]; rows
+cols <- dim(titanic)[2]; cols
+```
+
+Question (iii)
+
+Create a new variable in the data frame called **Survived.Word**. It should read either
+"survived" or "died" indicating whether the passenger survived or died. This variable
+should be of type `character`.
+
+```{r}
+titanic$Survived.Word[titanic$Survived == 1] <- "survived"
+titanic$Survived.Word[titanic$Survived == 0] <- "died"
+is.character(titanic$Survived.Word) # Check if the new variable is character
+table(titanic$Survived, titanic$Survived.Word) # Check the results of assignment
+```
+
+## Part 2: Exploring the Data in R
+
+Question (i)
+
+Use the `apply()` function to calculate the mean of the variables **Survived**, **Age**, and
+**Fare**. This will require using the `apply()` function on a sub-matrix of dimension 891 $\times$ 3.
+Explain what the mean of Survived tells us. One of the mean values is `NA`. Which
+variable has a mean value of `NA` and why is this the case?
+
+```{r}
+age <- titanic$Age
+fare <- titanic$Fare
+survived <- titanic$Survived
+submat <- cbind(survived, age, fare)
+apply(submat, 2, mean)
+```
+
+Variable **Age** has a mean of value of `NA` because there are some missing values in **Age**.
+
+
+Question (ii)
+
+Compute the proportion of female passengers who survived the titanic disaster. Round
+your answer to 2 decimals using the `round()` function. Hint `?round`.
+
+```{r}
+group_sex <- factor(titanic$Sex)
+survived_list <- split(titanic$Survived, group_sex)
+prop <- mean(survived_list$female)
+prop <- round(prop, digits = 2); prop
+``` 
+
+Question (iii)
+
+Of the survivors, compute the proportion of female passengers. Round your answer to 2
+decimals. This answer may take a few lines of code. One strategy would be to create a
+survivors matrix that only includes individuals who survived the disaster. Then using
+the survived matrix, calculate the proportion of females.
+
+```{r}
+num_male_survived <- sum(survived_list$male)
+num_female_survived <- sum(survived_list$female)
+prop2 <- num_female_survived / (num_male_survived + num_female_survived)
+prop2 <- round(prop2, digits = 2); prop2
+```
+
+Question (iv)
+
+Use the following code to create an empty numeric vector of length three called **Pclass.Survival**.
+We will fill in the elements of **Pclass.Survival** with the survival rates of the three
+classes.
+
+```{r}
+classes <- sort(unique(titanic$Pclass))
+Pclass.Survival <- vector("numeric", length = 3)
+names(Pclass.Survival) <- classes
+```
+
+Next use a `for` loop to fill in the **Pclass.Survival** vector with the survival rates for
+each class. The statements inside the loop should update the vector **Pclass.Survival**
+with the survival rate (the proportion of people who survived) for each class. Your loop
+should look like the following, with of course, your own code added inside the loop.
+
+```
+for (i in 1:3) {
+code that fills in the Pclass.Survival vector
+}
+```
+The elements in the **Pclass.Survival** vector should be rounded to two decimal places.
+
+```{r}
+for (i in 1:3){
+  Pclass.Survival[i] <- round(mean(titanic$Survived[titanic$Pclass == i]), digits = 2)
+}
+Pclass.Survival
+``` 
+ 
+Question (v)
+
+Now create a **Pclass.Survival2** vector that should equal the **Pclass.Survival** vector from the previous question, but use the `tapply()` function. Again, round the values to
+2 decimals.
+ 
+```{r}
+group_Pclass <- factor(titanic$Pclass)
+survived_rate <- tapply(titanic$Survived, group_Pclass, mean)
+survived_rate <- round(survived_rate, digits = 2); survived_rate
+``` 
+
+Quesion (vi)
+
+Does there appear to be a relationship between survival rate and class?
+
+Answer: Yes. Survival rate decrease as the number of class increase. 
