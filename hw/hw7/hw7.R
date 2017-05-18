@@ -1,6 +1,5 @@
 ### Part 1 ###
 # i
-```{r}
 poisLoglik <- function(lambda, data){
   # input the lambda and x, return the log-likelihood
   x <- data
