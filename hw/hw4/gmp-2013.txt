@@ -1,0 +1,382 @@
+"Area" "gmp" "pcgmp"
+"1" "Abilene, TX" 5.924e+09 35366
+"2" "Akron, OH" 2.9662e+10 42033
+"3" "Albany, GA" 4.857e+09 31196
+"4" "Albany, OR" 3.13e+09 26354
+"5" "Albany-Schenectady-Troy, NY" 4.3562e+10 49621
+"6" "Albuquerque, NM" 3.9618e+10 43884
+"7" "Alexandria, LA" 4.995e+09 32275
+"8" "Allentown-Bethlehem-Easton, PA-NJ" 3.2416e+10 39194
+"9" "Altoona, PA" 4.449e+09 35223
+"10" "Amarillo, TX" 1.0546e+10 40846
+"11" "Ames, IA" 4.648e+09 50302
+"12" "Anchorage, AK" 2.7487e+10 69387
+"13" "Ann Arbor, MI" 1.9389e+10 54734
+"14" "Anniston-Oxford-Jacksonville, AL" 3.518e+09 30136
+"15" "Appleton, WI" 1.0393e+10 45196
+"16" "Asheville, NC" 1.4787e+10 33786
+"17" "Athens-Clarke County, GA" 6.792e+09 34320
+"18" "Atlanta-Sandy Springs-Roswell, GA" 2.88175e+11 52178
+"19" "Atlantic City-Hammonton, NJ" 1.276e+10 46255
+"20" "Auburn-Opelika, AL" 4.293e+09 28445
+"21" "Augusta-Richmond County, GA-SC" 1.9497e+10 33599
+"22" "Austin-Round Rock, TX" 9.8126e+10 52110
+"23" "Bakersfield, CA" 3.3408e+10 38661
+"24" "Baltimore-Columbia-Towson, MD" 1.58746e+11 57294
+"25" "Bangor, ME" 5.295e+09 34524
+"26" "Barnstable Town, MA" 9.431e+09 43867
+"27" "Baton Rouge, LA" 4.5769e+10 55805
+"28" "Battle Creek, MI" 5.27e+09 39035
+"29" "Bay City, MI" 3.043e+09 28483
+"30" "Beaumont-Port Arthur, TX" 2.0283e+10 50096
+"31" "Beckley, WV" 4.594e+09 36922
+"32" "Bellingham, WA" 8.671e+09 42020
+"33" "Bend-Redmond, OR" 6.226e+09 37516
+"34" "Billings, MT" 8.329e+09 50367
+"35" "Binghamton, NY" 8.486e+09 34248
+"36" "Birmingham-Hoover, AL" 5.5913e+10 49034
+"37" "Bismarck, ND" 6.205e+09 50140
+"38" "Blacksburg-Christiansburg-Radford, VA" 5.837e+09 32362
+"39" "Bloomington, IL" 1.0551e+10 55220
+"40" "Bloomington, IN" 6.058e+09 37144
+"41" "Bloomsburg-Berwick, PA" 3.586e+09 42026
+"42" "Boise City, ID" 2.6869e+10 41319
+"43" "Boston-Cambridge-Newton, MA-NH" 3.49652e+11 74643
+"44" "Boulder, CO" 2.0311e+10 65508
+"45" "Bowling Green, KY" 5.489e+09 33564
+"46" "Bremerton-Silverdale, WA" 8.825e+09 34750
+"47" "Bridgeport-Stamford-Norwalk, CT" 8.7791e+10 93404
+"48" "Brownsville-Harlingen, TX" 8.015e+09 19207
+"49" "Brunswick, GA" 3.195e+09 28077
+"50" "Buffalo-Cheektowaga-Niagara Falls, NY" 4.8257e+10 42550
+"51" "Burlington, NC" 4.874e+09 31574
+"52" "Burlington-South Burlington, VT" 1.2018e+10 55953
+"53" "California-Lexington Park, MD" 5.421e+09 49449
+"54" "Canton-Massillon, OH" 1.4641e+10 36267
+"55" "Cape Coral-Fort Myers, FL" 2.0162e+10 30497
+"56" "Cape Girardeau, MO-IL" 3.482e+09 35731
+"57" "Carbondale-Marion, IL" 4.29e+09 33853
+"58" "Carson City, NV" 2.673e+09 49422
+"59" "Casper, WY" 6.501e+09 80288
+"60" "Cedar Rapids, IA" 1.6381e+10 62423
+"61" "Chambersburg-Waynesboro, PA" 4.287e+09 28189
+"62" "Champaign-Urbana, IL" 9.402e+09 39979
+"63" "Charleston, WV" 1.3107e+10 58318
+"64" "Charleston-North Charleston, SC" 3.0667e+10 43058
+"65" "Charlotte-Concord-Gastonia, NC-SC" 1.30318e+11 55802
+"66" "Charlottesville, VA" 1.054e+10 47042
+"67" "Chattanooga, TN-GA" 2.0945e+10 38662
+"68" "Cheyenne, WY" 4.954e+09 51711
+"69" "Chicago-Naperville-Elgin, IL-IN-WI" 5.50793e+11 57752
+"70" "Chico, CA" 6.247e+09 28130
+"71" "Cincinnati, OH-KY-IN" 1.11279e+11 52063
+"72" "Clarksville, TN-KY" 9.893e+09 36295
+"73" "Cleveland, TN" 3.642e+09 30724
+"74" "Cleveland-Elyria, OH" 1.14448e+11 55430
+"75" "Coeur d'Alene, ID" 4.223e+09 29273
+"76" "College Station-Bryan, TX" 7.672e+09 32398
+"77" "Colorado Springs, CO" 2.671e+10 39377
+"78" "Columbia, MO" 7.122e+09 41707
+"79" "Columbia, SC" 3.3199e+10 41824
+"80" "Columbus, GA-AL" 1.2108e+10 38250
+"81" "Columbus, IN" 4.932e+09 61970
+"82" "Columbus, OH" 1.07191e+11 54493
+"83" "Corpus Christi, TX" 2.0439e+10 46180
+"84" "Corvallis, OR" 5.231e+09 60408
+"85" "Crestview-Fort Walton Beach-Destin, FL" 1.1462e+10 45195
+"86" "Cumberland, MD-WV" 2.706e+09 26736
+"87" "Dallas-Fort Worth-Arlington, TX" 4.13627e+11 60730
+"88" "Dalton, GA" 5.147e+09 36190
+"89" "Danville, IL" 2.495e+09 31063
+"90" "Daphne-Fairhope-Foley, AL" 5.909e+09 30217
+"91" "Davenport-Moline-Rock Island, IA-IL" 1.8198e+10 47431
+"92" "Dayton, OH" 3.5216e+10 43884
+"93" "Decatur, AL" 5.063e+09 33008
+"94" "Decatur, IL" 5.511e+09 50431
+"95" "Deltona-Daytona Beach-Ormond Beach, FL" 1.3085e+10 21782
+"96" "Denver-Aurora-Lakewood, CO" 1.6615e+11 61595
+"97" "Des Moines-West Des Moines, IA" 3.9714e+10 66213
+"98" "Detroit-Warren-Dearborn, MI" 2.13258e+11 49653
+"99" "Dothan, AL" 4.583e+09 31029
+"100" "Dover, DE" 6.033e+09 35611
+"101" "Dubuque, IA" 4.624e+09 48314
+"102" "Duluth, MN-WI" 1.0928e+10 39046
+"103" "Durham-Chapel Hill, NC" 3.953e+10 73945
+"104" "East Stroudsburg, PA" 5.035e+09 30123
+"105" "Eau Claire, WI" 6.621e+09 40234
+"106" "El Centro, CA" 4.835e+09 27380
+"107" "Elizabethtown-Fort Knox, KY" 5.458e+09 36037
+"108" "Elkhart-Goshen, IN" 1.161e+10 57886
+"109" "Elmira, NY" 2.999e+09 33885
+"110" "El Paso, TX" 2.5543e+10 30736
+"111" "Erie, PA" 9.825e+09 35053
+"112" "Eugene, OR" 1.2382e+10 34760
+"113" "Evansville, IN-KY" 1.5101e+10 48049
+"114" "Fairbanks, AK" 5.027e+09 50052
+"115" "Fargo, ND-MN" 1.3376e+10 59852
+"116" "Farmington, NM" 5.613e+09 44368
+"117" "Fayetteville, NC" 1.6182e+10 42901
+"118" "Fayetteville-Springdale-Rogers, AR-MO" 2.2593e+10 45924
+"119" "Flagstaff, AZ" 4.93e+09 36104
+"120" "Flint, MI" 1.1952e+10 28773
+"121" "Florence, SC" 7.369e+09 35729
+"122" "Florence-Muscle Shoals, AL" 4.255e+09 28881
+"123" "Fond du Lac, WI" 3.951e+09 38815
+"124" "Fort Collins, CO" 1.2551e+10 39719
+"125" "Fort Smith, AR-OK" 9.776e+09 34918
+"126" "Fort Wayne, IN" 1.8571e+10 43788
+"127" "Fresno, CA" 3.3165e+10 34718
+"128" "Gadsden, AL" 2.518e+09 24225
+"129" "Gainesville, FL" 1.0431e+10 38577
+"130" "Gainesville, GA" 7.1e+09 37819
+"131" "Gettysburg, PA" 2.626e+09 25857
+"132" "Glens Falls, NY" 4.018e+09 31285
+"133" "Goldsboro, NC" 3.93e+09 31549
+"134" "Grand Forks, ND-MN" 4.326e+09 42938
+"135" "Grand Island, NE" 3.707e+09 44136
+"136" "Grand Junction, CO" 4.83e+09 32732
+"137" "Grand Rapids-Wyoming, MI" 4.5221e+10 44482
+"138" "Grants Pass, OR" 1.78e+09 21373
+"139" "Great Falls, MT" 2.946e+09 35758
+"140" "Greeley, CO" 8.592e+09 31848
+"141" "Green Bay, WI" 1.5991e+10 51187
+"142" "Greensboro-High Point, NC" 3.553e+10 47944
+"143" "Greenville, NC" 6.639e+09 38095
+"144" "Greenville-Anderson-Mauldin, SC" 3.2841e+10 38592
+"145" "Gulfport-Biloxi-Pascagoula, MS" 1.4768e+10 38609
+"146" "Hagerstown-Martinsburg, MD-WV" 7.85e+09 30392
+"147" "Hammond, LA" 3.362e+09 26806
+"148" "Hanford-Corcoran, CA" 4.662e+09 30882
+"149" "Harrisburg-Carlisle, PA" 2.9957e+10 53714
+"150" "Harrisonburg, VA" 6.664e+09 51604
+"151" "Hartford-West Hartford-East Hartford, CT" 8.1261e+10 66870
+"152" "Hattiesburg, MS" 5.107e+09 34506
+"153" "Hickory-Lenoir-Morganton, NC" 1.1689e+10 32151
+"154" "Hilton Head Island-Bluffton-Beaufort, SC" 7.264e+09 36599
+"155" "Hinesville, GA" 3.254e+09 40287
+"156" "Homosassa Springs, FL" 3.065e+09 22009
+"157" "Hot Springs, AR" 2.993e+09 30802
+"158" "Houma-Thibodaux, LA" 1.184e+10 56411
+"159" "Houston-The Woodlands-Sugar Land, TX" 4.56177e+11 72258
+"160" "Huntington-Ashland, WV-KY-OH" 1.2248e+10 33639
+"161" "Huntsville, AL" 2.1645e+10 49675
+"162" "Idaho Falls, ID" 5.057e+09 36893
+"163" "Indianapolis-Carmel-Anderson, IN" 1.17312e+11 60038
+"164" "Iowa City, IA" 7.974e+09 49475
+"165" "Ithaca, NY" 4.211e+09 40636
+"166" "Jackson, MI" 5.335e+09 33264
+"167" "Jackson, MS" 2.6225e+10 45499
+"168" "Jackson, TN" 5.348e+09 40932
+"169" "Jacksonville, FL" 5.8229e+10 41752
+"170" "Jacksonville, NC" 7.477e+09 40369
+"171" "Janesville-Beloit, WI" 5.413e+09 33677
+"172" "Jefferson City, MO" 6.14e+09 40800
+"173" "Johnson City, TN" 5.678e+09 28251
+"174" "Johnstown, PA" 3.965e+09 28222
+"175" "Jonesboro, AR" 4.543e+09 36159
+"176" "Joplin, MO" 6.054e+09 34546
+"177" "Kahului-Wailuku-Lahaina, HI" 6.976e+09 43520
+"178" "Kalamazoo-Portage, MI" 1.3005e+10 39151
+"179" "Kankakee, IL" 3.36e+09 29969
+"180" "Kansas City, MO-KS" 1.10278e+11 53677
+"181" "Kennewick-Richland, WA" 1.0314e+10 38043
+"182" "Killeen-Temple, TX" 1.4834e+10 35047
+"183" "Kingsport-Bristol-Bristol, TN-VA" 1.0279e+10 33341
+"184" "Kingston, NY" 4.888e+09 27008
+"185" "Knoxville, TN" 3.4346e+10 40279
+"186" "Kokomo, IN" 4.149e+09 50127
+"187" "La Crosse-Onalaska, WI-MN" 6.09e+09 44940
+"188" "Lafayette, LA" 2.5386e+10 52985
+"189" "Lafayette-West Lafayette, IN" 8.547e+09 40888
+"190" "Lake Charles, LA" 1.1884e+10 58818
+"191" "Lake Havasu City-Kingman, AZ" 3.52e+09 17336
+"192" "Lakeland-Winter Haven, FL" 1.7454e+10 28015
+"193" "Lancaster, PA" 2.1587e+10 40761
+"194" "Lansing-East Lansing, MI" 1.9168e+10 41018
+"195" "Laredo, TX" 6.847e+09 26084
+"196" "Las Cruces, NM" 5.908e+09 27677
+"197" "Las Vegas-Henderson-Paradise, NV" 8.7359e+10 43079
+"198" "Lawrence, KS" 3.622e+09 31680
+"199" "Lawton, OK" 4.534e+09 34583
+"200" "Lebanon, PA" 4.013e+09 29621
+"201" "Lewiston, ID-WA" 1.913e+09 30850
+"202" "Lewiston-Auburn, ME" 3.782e+09 35151
+"203" "Lexington-Fayette, KY" 2.4851e+10 50775
+"204" "Lima, OH" 5.166e+09 49062
+"205" "Lincoln, NE" 1.5482e+10 49285
+"206" "Little Rock-North Little Rock-Conway, AR" 3.8625e+10 53321
+"207" "Logan, UT-ID" 4.09e+09 31516
+"208" "Longview, TX" 1.134e+10 52373
+"209" "Longview, WA" 3.279e+09 32196
+"210" "Los Angeles-Long Beach-Anaheim, CA" 7.75967e+11 59092
+"211" "Louisville/Jefferson County, KY-IN" 6.0649e+10 48048
+"212" "Lubbock, TX" 1.0992e+10 36514
+"213" "Lynchburg, VA" 8.313e+09 32415
+"214" "Macon, GA" 8.002e+09 34601
+"215" "Madera, CA" 4.291e+09 28155
+"216" "Madison, WI" 4.0186e+10 64048
+"217" "Manchester-Nashua, NH" 2.2456e+10 55585
+"218" "Manhattan, KS" 2.84e+09 28955
+"219" "Mankato-North Mankato, MN" 4.151e+09 42114
+"220" "Mansfield, OH" 3.695e+09 30347
+"221" "McAllen-Edinburg-Mission, TX" 1.5777e+10 19335
+"222" "Medford, OR" 6.368e+09 30535
+"223" "Memphis, TN-MS-AR" 6.3081e+10 47014
+"224" "Merced, CA" 6.498e+09 24685
+"225" "Miami-Fort Lauderdale-West Palm Beach, FL" 2.63115e+11 45145
+"226" "Michigan City-La Porte, IN" 3.571e+09 32093
+"227" "Midland, MI" 3.604e+09 42948
+"228" "Midland, TX" 2.0255e+10 129193
+"229" "Milwaukee-Waukesha-West Allis, WI" 8.9052e+10 56734
+"230" "Minneapolis-St. Paul-Bloomington, MN-WI" 2.13466e+11 61711
+"231" "Missoula, MT" 4.323e+09 38666
+"232" "Mobile, AL" 1.7085e+10 41261
+"233" "Modesto, CA" 1.6284e+10 30987
+"234" "Monroe, LA" 6.439e+09 36059
+"235" "Monroe, MI" 4.264e+09 28355
+"236" "Montgomery, AL" 1.5489e+10 41468
+"237" "Morgantown, WV" 6.589e+09 48402
+"238" "Morristown, TN" 3.451e+09 29954
+"239" "Mount Vernon-Anacortes, WA" 4.453e+09 37472
+"240" "Muncie, IN" 3.481e+09 29627
+"241" "Muskegon, MI" 5.01e+09 29296
+"242" "Myrtle Beach-Conway-North Myrtle Beach, SC-NC" 1.4221e+10 35117
+"243" "Napa, CA" 7.546e+09 53771
+"244" "Naples-Immokalee-Marco Island, FL" 1.3326e+10 39235
+"245" "Nashville-Davidson--Murfreesboro--Franklin, TN" 9.5124e+10 54112
+"246" "New Bern, NC" 4.639e+09 36338
+"247" "New Haven-Milford, CT" 4.1461e+10 48083
+"248" "New Orleans-Metairie, LA" 7.0665e+10 56943
+"249" "New York-Newark-Jersey City, NY-NJ-PA" 1.377989e+12 69074
+"250" "Niles-Benton Harbor, MI" 5.827e+09 37531
+"251" "North Port-Sarasota-Bradenton, FL" 2.4358e+10 33251
+"252" "Norwich-New London, CT" 1.4409e+10 52559
+"253" "Ocala, FL" 6.96e+09 20631
+"254" "Ocean City, NJ" 4.307e+09 44914
+"255" "Odessa, TX" 8.494e+09 56864
+"256" "Ogden-Clearfield, UT" 2.2276e+10 35837
+"257" "Oklahoma City, OK" 6.5246e+10 49441
+"258" "Olympia-Tumwater, WA" 9.146e+09 34856
+"259" "Omaha-Council Bluffs, NE-IA" 5.1122e+10 57110
+"260" "Orlando-Kissimmee-Sanford, FL" 1.03992e+11 45855
+"261" "Oshkosh-Neenah, WI" 8.656e+09 51053
+"262" "Owensboro, KY" 4.834e+09 41526
+"263" "Oxnard-Thousand Oaks-Ventura, CA" 4.1737e+10 49709
+"264" "Palm Bay-Melbourne-Titusville, FL" 1.7398e+10 31586
+"265" "Panama City, FL" 6.974e+09 36548
+"266" "Parkersburg-Vienna, WV" 3.217e+09 34787
+"267" "Pensacola-Ferry Pass-Brent, FL" 1.4208e+10 30430
+"268" "Peoria, IL" 1.922e+10 50300
+"269" "Philadelphia-Camden-Wilmington, PA-NJ-DE-MD" 3.58091e+11 59339
+"270" "Phoenix-Mesa-Scottsdale, AZ" 1.97079e+11 44803
+"271" "Pine Bluff, AR" 3.005e+09 31366
+"272" "Pittsburgh, PA" 1.22891e+11 52053
+"273" "Pittsfield, MA" 5.319e+09 41048
+"274" "Pocatello, ID" 2.289e+09 27499
+"275" "Portland-South Portland, ME" 2.5897e+10 49812
+"276" "Portland-Vancouver-Hillsboro, OR-WA" 1.59266e+11 68810
+"277" "Port St. Lucie, FL" 1.1046e+10 25214
+"278" "Prescott, AZ" 4.49e+09 20869
+"279" "Providence-Warwick, RI-MA" 6.8975e+10 42994
+"280" "Provo-Orem, UT" 1.7918e+10 31869
+"281" "Pueblo, CO" 4.328e+09 26809
+"282" "Punta Gorda, FL" 3.25e+09 19729
+"283" "Racine, WI" 6.988e+09 35830
+"284" "Raleigh, NC" 6.2758e+10 51673
+"285" "Rapid City, SD" 5.61e+09 39667
+"286" "Reading, PA" 1.5238e+10 36849
+"287" "Redding, CA" 4.973e+09 27785
+"288" "Reno, NV" 1.9021e+10 43460
+"289" "Richmond, VA" 6.4155e+10 51498
+"290" "Riverside-San Bernardino-Ontario, CA" 1.18693e+11 27094
+"291" "Roanoke, VA" 1.3051e+10 41853
+"292" "Rochester, MN" 9.974e+09 47080
+"293" "Rochester, NY" 4.8966e+10 45202
+"294" "Rockford, IL" 1.3103e+10 38020
+"295" "Rocky Mount, NC" 6.068e+09 40277
+"296" "Rome, GA" 3.202e+09 33412
+"297" "Sacramento--Roseville--Arden-Arcade, CA" 1.01402e+11 45764
+"298" "Saginaw, MI" 7.143e+09 36345
+"299" "St. Cloud, MN" 7.939e+09 41498
+"300" "St. George, UT" 3.958e+09 26776
+"301" "St. Joseph, MO-KS" 4.866e+09 38081
+"302" "St. Louis, MO-IL" 1.36519e+11 48738
+"303" "Salem, OR" 1.2449e+10 31092
+"304" "Salinas, CA" 1.7886e+10 41709
+"305" "Salisbury, MD-DE" 1.3071e+10 33913
+"306" "Salt Lake City, UT" 7.0719e+10 62008
+"307" "San Angelo, TX" 4.176e+09 35824
+"308" "San Antonio-New Braunfels, TX" 8.9463e+10 39280
+"309" "San Diego-Carlsbad, CA" 1.86108e+11 57955
+"310" "San Francisco-Oakland-Hayward, CA" 3.56081e+11 78844
+"311" "San Jose-Sunnyvale-Santa Clara, CA" 1.92184e+11 100115
+"312" "San Luis Obispo-Paso Robles-Arroyo Grande, CA" 1.1482e+10 41535
+"313" "Santa Cruz-Watsonville, CA" 9.948e+09 36923
+"314" "Santa Fe, NM" 6.618e+09 44892
+"315" "Santa Maria-Santa Barbara, CA" 2.1812e+10 50063
+"316" "Santa Rosa, CA" 2.0621e+10 41657
+"317" "Savannah, GA" 1.3769e+10 37614
+"318" "Scranton--Wilkes-Barre--Hazleton, PA" 2.0041e+10 35659
+"319" "Seattle-Tacoma-Bellevue, WA" 2.69679e+11 74701
+"320" "Sebastian-Vero Beach, FL" 3.966e+09 27928
+"321" "Sebring, FL" 1.745e+09 17878
+"322" "Sheboygan, WI" 5.698e+09 49583
+"323" "Sherman-Denison, TX" 3.67e+09 29996
+"324" "Shreveport-Bossier City, LA" 2.0887e+10 46782
+"325" "Sierra Vista-Douglas, AZ" 3.916e+09 30242
+"326" "Sioux City, IA-NE-SD" 7.95e+09 47121
+"327" "Sioux Falls, SD" 1.6046e+10 65892
+"328" "South Bend-Mishawaka, IN-MI" 1.2407e+10 38941
+"329" "Spartanburg, SC" 1.2193e+10 38224
+"330" "Spokane-Spokane Valley, WA" 2.0033e+10 37394
+"331" "Springfield, IL" 8.714e+09 41152
+"332" "Springfield, MA" 2.2895e+10 36520
+"333" "Springfield, MO" 1.5702e+10 34991
+"334" "Springfield, OH" 3.768e+09 27674
+"335" "State College, PA" 6.88e+09 44274
+"336" "Staunton-Waynesboro, VA" 4.391e+09 36736
+"337" "Stockton-Lodi, CA" 2.0603e+10 29250
+"338" "Sumter, SC" 3.257e+09 30122
+"339" "Syracuse, NY" 2.837e+10 42860
+"340" "Tallahassee, FL" 1.2893e+10 34541
+"341" "Tampa-St. Petersburg-Clearwater, FL" 1.15263e+11 40153
+"342" "Terre Haute, IN" 6.025e+09 34989
+"343" "Texarkana, TX-AR" 4.765e+09 31846
+"344" "The Villages, FL" 2.006e+09 18739
+"345" "Toledo, OH" 2.8252e+10 46457
+"346" "Topeka, KS" 9.05e+09 38642
+"347" "Trenton, NJ" 2.7558e+10 74398
+"348" "Tucson, AZ" 3.3355e+10 33471
+"349" "Tulsa, OK" 4.9616e+10 51599
+"350" "Tuscaloosa, AL" 9.437e+09 40049
+"351" "Tyler, TX" 9.822e+09 45453
+"352" "Urban Honolulu, HI" 5.4011e+10 54921
+"353" "Utica-Rome, NY" 9.517e+09 31962
+"354" "Valdosta, GA" 4.316e+09 30206
+"355" "Vallejo-Fairfield, CA" 1.4618e+10 34412
+"356" "Victoria, TX" 4.843e+09 49678
+"357" "Vineland-Bridgeton, NJ" 5.136e+09 32647
+"358" "Virginia Beach-Norfolk-Newport News, VA-NC" 8.3162e+10 48708
+"359" "Visalia-Porterville, CA" 1.2126e+10 26700
+"360" "Waco, TX" 9.257e+09 35746
+"361" "Walla Walla, WA" 2.303e+09 36227
+"362" "Warner Robins, GA" 6.282e+09 33736
+"363" "Washington-Arlington-Alexandria, DC-VA-MD-WV" 4.37085e+11 73461
+"364" "Waterloo-Cedar Falls, IA" 8.093e+09 47748
+"365" "Watertown-Fort Drum, NY" 6.076e+09 50844
+"366" "Wausau, WI" 6.033e+09 44554
+"367" "Weirton-Steubenville, WV-OH" 3.421e+09 28044
+"368" "Wenatchee, WA" 3.799e+09 33490
+"369" "Wheeling, WV-OH" 6.161e+09 42270
+"370" "Wichita, KS" 2.9174e+10 45771
+"371" "Wichita Falls, TX" 6.265e+09 41435
+"372" "Williamsport, PA" 4.617e+09 39543
+"373" "Wilmington, NC" 1.1501e+10 42819
+"374" "Winchester, VA-WV" 5.182e+09 39262
+"375" "Winston-Salem, NC" 2.5382e+10 38999
+"376" "Worcester, MA-CT" 3.5022e+10 37792
+"377" "Yakima, WA" 7.76e+09 31411
+"378" "York-Hanover, PA" 1.5827e+10 36055
+"379" "Youngstown-Warren-Boardman, OH-PA" 1.759e+10 31665
+"380" "Yuba City, CA" 4.782e+09 28349
+"381" "Yuma, AZ" 4.976e+09 24730
