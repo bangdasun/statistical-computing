@@ -52,6 +52,8 @@ p2 = ggplot() +
 
 dist1 = apply(df[, c("x", "y")], MARGIN = 1, dist, center1_1)
 dist2 = apply(df[, c("x", "y")], MARGIN = 1, dist, center2_1)
+
+# Assign point to nearest center
 df$cluster3 = factor(ifelse(dist1 < dist2, 1, 2))
 
 p3 = ggplot() + 
@@ -60,9 +62,11 @@ p3 = ggplot() +
   geom_point(mapping = aes(x = center1_1[1], y = center1_1[2]), shape = 3, size = 3, color = "red") +
   geom_point(mapping = aes(x = center2_1[1], y = center2_1[2]), shape = 3, size = 3, color = "blue")
 
+# Update centers
 center1_2 = c(mean(df$x[df$cluster3 == 1]), mean(df$y[df$cluster3 == 1]))
 center2_2 = c(mean(df$x[df$cluster3 == 2]), mean(df$y[df$cluster3 == 2]))
 
+# Check if the clusters are unchange
 p4 = ggplot() + 
   geom_point(data = df, mapping = aes(x = x, y = y, colour = cluster3), size = 2) + 
   labs(title = 4) +
