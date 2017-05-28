@@ -30,3 +30,11 @@ Data type and data structures in R
 #### Data Manipulation: split/apply/combine and plyr
 
 #### Databases and Parallel
+
+The R packages used includes:
+
+ggplot2
+
+plyr
+
+dplyr
