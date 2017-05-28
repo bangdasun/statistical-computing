@@ -31,10 +31,17 @@ Data type and data structures in R
 
 #### Databases and Parallel
 
-The R packages used includes:
+List of R packages used:
 
-ggplot2
+##### ISLR
 
-plyr
+##### ggplot2 (grid, gridExtra for multi-plotting)
 
-dplyr
+##### plyr
+
+##### dplyr
+
+##### numDeriv
+
+##### xlsx
+
