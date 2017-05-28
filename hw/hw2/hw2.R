@@ -50,8 +50,10 @@ cor(housing2$logValue[which(housing2$after1950 == F)], housing2$logUnits[which(h
 
 # iv
 par(mfrow = c(1,2))
-plot(housing2$logUnits[which(housing2$Borough == 'Manhattan')], housing2$logValue[which(housing2$Borough == 'Manhattan')], ylab = 'logValue', xlab = 'logUnits', main = "Manhattan", ylim = c(7,21), xlim = c(0,9))
-plot(housing2$logUnits[which(housing2$Borough == 'Brooklyn')], housing2$logValue[which(housing2$Borough == 'Brooklyn')], ylab = 'logValue', xlab = 'logUnits', main = "Brooklyn",ylim = c(7,21), xlim = c(0,9))
+plot(housing2$logUnits[which(housing2$Borough == 'Manhattan')], housing2$logValue[which(housing2$Borough == 'Manhattan')], 
+     ylab = 'logValue', xlab = 'logUnits', main = "Manhattan", ylim = c(7,21), xlim = c(0,9))
+plot(housing2$logUnits[which(housing2$Borough == 'Brooklyn')], housing2$logValue[which(housing2$Borough == 'Brooklyn')],
+     ylab = 'logValue', xlab = 'logUnits', main = "Brooklyn",ylim = c(7,21), xlim = c(0,9))
 
 # v
 manhat.props <- c()
