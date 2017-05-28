@@ -1,7 +1,7 @@
 # dplyr tutorial
 # Reference:
 #
-#   http://genomicsclass.github.io/book/pages/dplyr_tutorial.html
+#   https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html
 #   http://genomicsclass.github.io/book/pages/dplyr_tutorial.html
 #
 
