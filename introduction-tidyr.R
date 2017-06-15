@@ -41,5 +41,5 @@ messydata2 = data.frame(
 
 messydata2
 messydata2 %>%
-  gather(key, time, -id, -trt) %>%                        # key - value
+  gather(key, time, -id, -trt) %>%                        # (data) - key - value - group
   separate(key, into = c("location", "time"), sep = "_")  # separate key
