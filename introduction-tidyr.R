@@ -43,3 +43,25 @@ messydata2
 messydata2 %>%
   gather(key, time, -id, -trt) %>%                        # (data) - key - value - group
   separate(key, into = c("location", "time"), sep = "_")  # separate key
+
+# wide -> long, long -> wide: comparison with reshape2 package
+df <- data.frame(
+  date = seq(ymd('20170710'), ymd('20170724'), by = 'day'),
+  A = rnorm(15),
+  B = rnorm(15),
+  C = rnorm(15)
+)
+
+# reshape2 - specify key (id)
+df_long <- melt(df, id.vars = c('date'))
+df_long
+
+df_wide <- dcast(df_long, date ~ variable)
+df_wide
+
+# tidyr - specify variables directly
+df_long <- gather(df, 'type', 'value', 2:4)
+df_long
+
+df_wide <- spread(df_long, type, value)
+df_wide
