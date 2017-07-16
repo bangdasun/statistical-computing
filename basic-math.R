@@ -56,3 +56,15 @@ dxy = deriv(fxy, c('x', 'y'))
 dxy
 x = 1; y = 1
 eval(dxy)
+
+# get the derivatives (gradient) numerically
+library(numDeriv)
+
+# objective functions and its derivatives
+object_func <- function(x) x[1]^2 + x[2]^2 / 3
+deriv_func <- function(x) return(c(2 * x[1], 2 * x[2] / 3))
+
+# calcuate the gradient using grad() at (0.5, 1)
+grad(object_func, c(0.5, 1))
+# check the value of derivatives at (0.5, 1)
+deriv_func(c(0.5, 1))
