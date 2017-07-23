@@ -3,11 +3,15 @@ STAT GR5206 Statistical Computing and Introduction to Data Science taught by Pro
 
 The topics discussed in this course includes
 #### Mathematics Basis Review
+* Calculus (Gradient, integrals);
+* Linear Algebra (inverse, eigenvalue, eigenvector, orthogonal, decomposition);
+* Probabilities and Statistics (MLE, MME).
 
 #### Introduction to R and Rstudio
 
 #### Working with Data in R
-Data type and data structures in R
+* Data type and data structures in R;
+* Data manipulations.
 
 #### EDA and Data Visualization
 
@@ -18,8 +22,12 @@ Data type and data structures in R
 #### Functions
 
 #### Simulation
+* Inverse transformation;
+* Rejection sampling.
 
 #### Optimization
+* Gradient descent;
+* Newton's method.
 
 #### KNN
 
@@ -33,15 +41,10 @@ Data type and data structures in R
 
 List of R packages used:
 
-##### ISLR
-
-##### ggplot2 (grid, gridExtra for multi-plotting)
-
-##### plyr
-
-##### dplyr
-
-##### numDeriv
-
-##### xlsx
-
+* ISLR
+* ggplot2 (grid, gridExtra for multi-plotting)
+* plyr
+* numDeriv
+* RDBI
+* RSQLite
+* xlsx
