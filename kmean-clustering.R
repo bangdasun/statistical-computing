@@ -79,17 +79,17 @@ library(gridExtra)
 grid.arrange(p1, p2, p3, p4, ncol = 2)
 
 ###  ======================= Self-defined function  ======================= ###
+# Data
 set.seed(1234)
 x = rnorm(40, mean = 3, sd = 1)
 y = rnorm(40, mean = 4, sd = 2)
 y[x < 3] = y[x < 3] + 10
 X <- cbind(x, y)
 df <- as.data.frame(X)
-
 library(ggplot2)
 ggplot(df) + geom_point(mapping = aes(x = x, y = y), size = 2)
 
-
+# Help functions
 calcDistance <- function(x, center) {
   # @param x: sample
   # @param center: center of cluster
@@ -120,30 +120,32 @@ calcCenter <- function(X, cluster) {
   return(Center)
 }
 
-my_kmeans <- function(X, k = 2) {
+# Main functions
+myKmeans <- function(X, k = 2) {
   # @param X: data matrix with shape n x p 
   # @param k: number of clusters
   
   Center <- matrix(0, nrow = k, ncol = ncol(X))
-  clusterAssignMat <- matrix(0, nrow = nrow(X), ncol = 1)
-  prevCluster <- clusterAssignMat
+  cluster_assign_mat <- matrix(0, nrow = nrow(X), ncol = 1)
+  prev_cluster <- cluster_assign_mat
   
-  currentCluster <- sample(1:k, size = nrow(X), replace = TRUE)
+  current_cluster <- sample(1:k, size = nrow(X), replace = TRUE)
   
-  while(!identical(prevCluster, currentCluster)) {
-    clusterAssignMat <- cbind(clusterAssignMat, currentCluster)
-    prevCluster <- currentCluster
+  while(!identical(prev_cluster, current_cluster)) {
+    cluster_assign_mat <- cbind(cluster_assign_mat, current_cluster)
+    
     # check again if cluster unchanged
-    if (identical(prevCluster, currentCluster)) {
+    if (identical(prev_cluster, current_cluster)) {
       break
     }
-    Center <- calcCenter(X, currentCluster)
-    currentCluster <- apply(X, 1, assignCluster, Center = Center)
+    prev_cluster <- current_cluster
+    Center <- calcCenter(X, current_cluster)
+    current_cluster <- apply(X, 1, assignCluster, Center = Center)
   }
-  return(list(cluster = currentCluster, Center = Center, cluster_iter = clusterAssignMat))
+  return(list(cluster = current_cluster, Center = Center, cluster_iter = cluster_assign_mat))
 }
 
-kmeansResult <- my_kmeans(X, k = 2)
-
+# Demo
+kmeansResult <- myKmeans(X, k = 2)
 df$cluster <- kmeansResult$cluster
 ggplot(df) + geom_point(mapping = aes(x = x, y = y, color = factor(cluster)), size = 2)
