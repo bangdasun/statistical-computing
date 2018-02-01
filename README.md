@@ -1,43 +1,43 @@
-# Statistical-computing
+## Statistical-computing
 STAT GR5206 Statistical Computing and Introduction to Data Science taught by Professor Cynthia Rush
 
 The topics discussed in this course includes
-#### Mathematics Basis Review
+### Mathematics Basis Review
 * Calculus (Gradient, integrals);
 * Linear Algebra (inverse, eigenvalue, eigenvector, orthogonal, decomposition);
 * Probabilities and Statistics (MLE, MME).
 
-#### Introduction to R and Rstudio
+### Introduction to R and Rstudio
 
-#### Working with Data in R
+### Working with Data in R
 * Data type and data structures in R;
 * Data manipulations.
 
-#### EDA and Data Visualization
+### EDA and Data Visualization
 
-#### Bootstrap and Cross Validation
+### Bootstrap and Cross Validation
 
-#### Web scraping, String manipulation and Regular Expression
+### Web scraping, String manipulation and Regular Expression
 
-#### Functions
+### Functions
 
-#### Simulation
+### Simulation
 * Inverse transformation;
 * Rejection sampling.
 
-#### Optimization
+### Optimization
 * Gradient descent;
 * Newton's method.
 
-#### KNN
+### KNN
 
-#### Kmeans Clustering
+### Kmeans Clustering
 
-#### PCA
+### PCA
 
-#### Data Manipulation: split/apply/combine and plyr
+### Data Manipulation: split/apply/combine and plyr
 
-#### Databases and Parallel
+### Databases and Parallel
 
 List of R packages used:
 
